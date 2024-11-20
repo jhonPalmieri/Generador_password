@@ -7,13 +7,17 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="css/styles.css" />
-    <title>Document</title>
+    <title>Generador password</title>
   </head>
   <body>
+    <div>
+      <h2 class="loading">loading..</h2>
+      <img src="./imagen/gradient-5812_256.gif" alt=""></div>
+    
     <div class="password-generator">
-      <input type="text" class="password" id="password" placeholder="P4$5W0RD!" readonly />
+      <input type="text" class="password" id="password" placeholder="Password Generada" readonly />
       <div>
-        <label for="range" class="range-label">LENGTH: <span id="length-text">16</span></label>
+        <label for="range" class="range-label">Longitud:<span id="length-text">16</span></label>
       </div>
       <div class="range-container">
         <span>4</span>
@@ -22,27 +26,27 @@
       </div>
       <div id="options" class="options-container">
         <div class="input-field">
-          <span class="option-text">Include Uppercase</span>
+          <span class="option-text">Incluir MAYUSCULAS</span>
           <input type="checkbox" id="uppercase" class="option-input" />
           <label for="uppercase" class="option-label" />
         </div>
         <div class="input-field">
-          <span class="option-text">Include Lowercase</span>
+          <span class="option-text">Incluir minusculas</span>
           <input type="checkbox" id="lowercase" class="option-input" />
           <label for="lowercase" class="option-label" />
         </div>
         <div class="input-field">
-          <span class="toogle">Include Numbers</span>
+          <span class="toogle">Incluir numeros</span>
           <input type="checkbox" id="numbers" class="option-input" />
           <label for="numbers" class="option-label" />
         </div>
         <div class="input-field">
-          <span class="toogle">Include Symbols</span>
+          <span class="toogle">Include Simbolos</span>
           <input type="checkbox" id="symbols" class="option-input" />
           <label for="symbols" class="option-label" />
         </div>
       </div>
-      <button id="generate-password" class="button" disabled>Generate Password</button>
+      <button id="generate-password" class="button" disabled>Generar Password</button>
     </div>
     <script src="js/scripts.js"></script>
   </body>
